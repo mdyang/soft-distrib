@@ -1,2 +1,4 @@
-soft-distributions
+soft-distrib
 ==================
+
+repo for software releases
