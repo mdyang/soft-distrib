@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="feed-alert.exe" version="1.0.0.9" publicKeyToken="fb1734171f486ccf" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\AppIcon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="feed-alert" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="feed-alert.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="feed-alert.exe" size="65536">
+      <assemblyIdentity name="feed-alert" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>x8eHT8WXtHmfwPc+k7Zzk4v/OicavVrWhlbOUC6N73I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="134656">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.4.6.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SNCuOK3YiOSpjj9lW2J2pWpoIxH5nTXmtn/DcqtdHeM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="datastore.xml" size="143" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IOV6kz284XaSQJytjyspcIHUZg6y2K2P2vFArv/yNz4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="feed-alert.exe.config" size="158">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0/gnn6POFEgYA0gzsc3DIvRej6EZCh1ya+fx1KHzzH4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\AppIcon.ico" size="3774">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/5653aBTs9Accx6G0EKwjHQEwPlAjYbLxQCG/igNWKo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sources.xml" size="253" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XIesLYEs3iAFVQRERB5rgec8fKLZppZaxIsOLGUZ8bk=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=FAREAST\meyang" issuerKeyHash="2f9ba5a5927fb612f21d2bcea32ebe00bdf4032b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+A+XDpFkMnsBXrmWNS3mp5u2afdqdi42W1mJUEXEQ5c=</DigestValue></Reference></SignedInfo><SignatureValue>Y41XGncIfJahncTmRWl97U2KnPF1xxDEViEWQrOFY7GR1yyzhArK+IUpee5/poosaNbqGV8PCkYim18ELwqUO1gsvm5xFb7ZBN5XoXI16AR/huhT7sDBhF74EXznxvgmZtjpZvuN50n4BhbiYpwlzA6nZC2wzUqsVIKP1D0UCKM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tegxnxEqfwsfcJ9Kkk4jto0e821vYtqa5N1fAuOq7dFKSDZnD2l4uEZzely8B/g8JKxYSFrwhB4Rnf4nwH/+IDu3/8UDUDwPX8q4z3OL9Ts5GzSh6HOfgGso4ECLBKP8GYCUGsdkzHkPw8/2r4qPRhD3wpswllYNtyqE00JFFc0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9743c4455089595b362e766af769b69ba7e62d3596b95e017b3264910e970ff8" Description="" Url=""><as:assemblyIdentity name="feed-alert.exe" version="1.0.0.9" publicKeyToken="fb1734171f486ccf" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=FAREAST\meyang</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aBKwCmezPdflCqwLB3i4XuA0pzM9Kcm1fVhzywPzHCc=</DigestValue></Reference></SignedInfo><SignatureValue>L1+zhF8s1rWqFlSgg5KIX/c3XJEWUSFv6hB1IA4hUbH8GqtjTNZJSRpRvq4OTl4u7SGGDoAs8AS417UurzSAhIRY4/Kb9R3UEj6d+KPAX7+785JXk7RRSGt5Fiidqk8ivehj5PQ8/nFno+CpJ0/1xbild+lZ9fWOk2CjwbmocD4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tegxnxEqfwsfcJ9Kkk4jto0e821vYtqa5N1fAuOq7dFKSDZnD2l4uEZzely8B/g8JKxYSFrwhB4Rnf4nwH/+IDu3/8UDUDwPX8q4z3OL9Ts5GzSh6HOfgGso4ECLBKP8GYCUGsdkzHkPw8/2r4qPRhD3wpswllYNtyqE00JFFc0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQRuwXni2LLa9NplSLGaU62zANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwARgBBAFIARQBBAFMAVABcAG0AZQB5AGEAbgBnMB4XDTEzMTIyNTAzMzEwNloXDTE0MTIyNTA5MzEwNlowJzElMCMGA1UEAx4cAEYAQQBSAEUAQQBTAFQAXABtAGUAeQBhAG4AZzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtegxnxEqfwsfcJ9Kkk4jto0e821vYtqa5N1fAuOq7dFKSDZnD2l4uEZzely8B/g8JKxYSFrwhB4Rnf4nwH/+IDu3/8UDUDwPX8q4z3OL9Ts5GzSh6HOfgGso4ECLBKP8GYCUGsdkzHkPw8/2r4qPRhD3wpswllYNtyqE00JFFc0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCwNda2F+sflu/CooxFGxJRcq7tysz+sbp0wHOd8oRC0wPem99y3KyibU+MlflAUvSM82bFlStWK8EH2yIIrexW41sFJxScWSCKOTj/GBRegDVcBab8PsU8A/gIIinZ2KKv83pwfMGUR/2IoP44rODd0uEjEIm47MiAy8I5U6tcqA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
